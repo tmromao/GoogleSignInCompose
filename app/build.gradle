@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.example.googlesignincompose'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.googlesignincompose"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -38,7 +38,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.1.1'
+        kotlinCompilerExtensionVersion '1.4.3'
     }
     packagingOptions {
         resources {
@@ -62,11 +62,11 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
-    implementation 'com.google.android.gms:play-services-auth:20.4.1'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.6.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.6.1"
     implementation "androidx.navigation:navigation-compose:2.5.3"
     implementation "io.coil-kt:coil-compose:2.2.2"
 

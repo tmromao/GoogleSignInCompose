@@ -16,6 +16,18 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.google.android.gms.common.SignInButton
 
+// This is the UI for the sign in screen
+// It contains the following fields:
+// state: SignInState
+// onSignInClick: () -> Unit
+// We use LaunchedEffect to show the error message if any
+// We use Box to show the sign in button
+// We use Button to show the sign in button
+// We use Text to show the sign in button text
+// We use LocalContext to get the context
+// We use Toast to show the error message
+// We use Modifier to set the size of the sign in button
+// We use Modifier to set the padding of the sign in button
 @Composable
 fun SignInScreen(
     state: SignInState,
